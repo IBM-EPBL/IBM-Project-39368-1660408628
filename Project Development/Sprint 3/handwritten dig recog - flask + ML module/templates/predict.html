@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>A novel Handwritten Digit Recognition</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/predict.css')}}" />
+		<link rel="icon" type="image/svg" sizes="32x32" href="{{url_for('static',filename='images/icon2.jpg')}}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+		<style>
+            mark { 
+              background-color:#b4bcba;
+              color: black;
+            }
+            </style>
+
+	</head>
+	<body>
+		<div class="container">
+			<h1><mark>The sample digit is recognised as : &nbsp;</mark></h1> 
+			<div class="result-wrapper">
+				<div class="input-image-container">
+					<img src="{{url_for('static',filename='data/')}}{{img_name}}" />
+				</div>
+				<div class="result-container">
+					<div class="value">{{best.0}}</div>
+					<div class="accuracy">Accuracy level of prediction is : <b>{{best.1}}% </b></div>
+				</div>
+			</div>
+			<!--
+			<h1>Other Predictions could be </h1>
+			<div class="other_predictions">
+				{% for x in others %}
+				<div class="value">
+					<h2>{{x.0}}</h2>
+					<div class="accuracy">{{x.1}}%</div>
+				</div>
+				{% endfor %}
+			</div>
+			-->
+		</div>
+	</body>
+</html>
