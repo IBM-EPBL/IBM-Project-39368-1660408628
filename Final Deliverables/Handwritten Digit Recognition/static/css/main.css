@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	
+	color: #384b8f;
+	font-family: "Overpass", sans-serif;
+}
+
+.container {
+	background-image: url('../images/bg_image.png');
+	
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #d0d9f7;
+	
+}
+
+.heading {
+	margin-top: -2rem;
+	padding-bottom: 2rem;
+	width: fit-content;
+	text-align: center;
+	
+}
+
+.heading .heading__main {
+	font-size: 3rem;
+	
+	font-weight: 550;
+}
+
+.heading .heading__sub {
+	font-size: 2rem;
+	color: black;
+}
+
+.upload-container {
+	box-shadow: 0 0 20px rgb(255, 255, 255);
+	width: 30rem;
+	height: 10rem;
+	padding: 1.5rem;
+	font-size: large;
+	background: transparent;
+	
+}
+
+.form-wrapper {
+	/*background-color: #bac0db;*/
+	background: transparent;
+	/*background-color: #d0d9f7;*/
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/*border: 1px double #384b8f;*/
+
+	justify-content: center;
+	align-items: center;
+}
+
+.form-wrapper #loading {
+	display: none;
+	position: absolute;
+}
+
+.form-wrapper .upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24rem;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: auto;
+	border-radius: 6px;
+	color: white;
+	background-color: #6e6e6f;
+	box-shadow: 0 10px 10px rgb(255, 255, 255);
+	text-align: center;
+	font-size: large;
+	vertical-align: auto;
+	
+	
+}
+
+.form-wrapper .upload #up_btn {
+	display: none;
+	font-size: large;
+}
+
+.form-wrapper .upload label {
+	font-size: 1rem;
+	font-weight: 600;
+	color: white;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	font-size: 24px;
+	display: block;
+}
+
+.form-wrapper .upload svg {
+	height: 15px;
+	width: auto;
+	padding-right: 8px;
+	margin-bottom: -2px;
+}
+
+@media screen and (max-width: 700px) {
+	.upload-container {
+		height: 20rem;
+		width: 18rem;
+		margin-top: 3.5rem;
+		margin-bottom: -8rem;
+		
+	}
+
+
+	.heading .heading__main {
+		margin-top: -6rem;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+}
